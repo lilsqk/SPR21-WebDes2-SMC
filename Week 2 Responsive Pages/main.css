@@ -1,0 +1,250 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: helvetica;
+    background-color: #EDCC74;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    max-width: 100%;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+
+p {
+    padding: 5%;
+}
+
+#menuToggle:checked + ul {
+    display: block;
+    margin-top: 0px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    z-index: 999999;
+}
+
+#logo {
+    padding-left: 10px;
+    padding-top: 2px;
+    height: 50px;
+}
+
+#menuToggle {
+    display: none;
+}
+
+#menutoggle:checked +ul{
+    display:block;
+}
+
+
+
+#toggleButton {
+    padding-top: 10px;
+    padding-right: 5px;
+    height: 30px;
+    float: right;
+}
+
+header nav ul {
+    display: none;
+    padding-left: 0px;
+    list-style: none;
+}
+
+#menuToggle:checked + ul {
+    display: block;
+}
+
+head{
+    width: 100%;
+}
+
+
+
+header nav ul li:last-child {
+    border-bottom: 0px;
+}
+
+@media(min-width: 768px) {
+    section {
+        width: 88%;
+        margin: auto;
+        background-color:#EDCC74;
+    }
+
+ 
+
+    label[for=menuToggle] {
+        display: none;
+    }
+
+    header nav ul {
+        display: block;
+        float: right;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        border-bottom: 0px;
+    } }
+
+    .members {
+        width: 80%;
+        margin: 30px auto;
+        font-family: sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    a {
+        display: inline-block;
+        margin-bottom: 8px;
+        width: calc(50% - 4px);
+        margin-right: 8px;
+        text-decoration: none;
+        color: black;
+      }
+      
+      a:nth-of-type(2n) {
+        margin-right: 0;
+      }
+      
+
+      a:hover img {
+        transform: scale(1.15);
+      }
+      
+      figure {
+        margin: 0;
+        overflow: hidden;
+      }
+      
+      figcaption {
+        margin-top: 15px;
+        text-align: center;
+      } 
+      
+      @media screen and (min-width: 50em) {
+        a {
+          width: calc(33% - 7px);
+        }
+        
+        a:nth-of-type(2n) {
+            margin-right: px;
+          }
+          
+        a:nth-of-type(4n) {
+          margin-right: 0;
+        }
+    }
+      
+      
+.merch-hedear-section{
+    background: #CB1A22;
+    padding: 50px 50px;
+}
+.merch-hedear-section > h1{
+    font-size: 50px;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+.merch-header-section > div {
+    padding-top:50px ;
+}
+.merch-header-section > div img{
+    width: 650px;
+}
+
+.merch-selfcare-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+}
+.merch-selfcare-section > div{
+    padding: 0 20px;
+}
+.merch-selfcare-section > div img{
+    max-width: 390px;
+    width: 100%;
+    object-fit: contain;
+}
+.merch-selfcare-section  h1{
+    margin: 0;
+   
+}
+.merch-selfcare-section  p{
+    line-height: 40px;
+}
+
+.btn-white-border{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background: none;
+    border: white 2px solid;
+    color: white;
+    font-weight:600 ;
+    cursor: pointer;
+    transition:0.5s ease ;
+    padding-bottom: 50px;
+}
+
+.btn-white-border:hover{
+    background: white;
+    color: #EECD6D;
+}
+
+@media screen and (max-width:720px){
+    .merch-header-section {
+        padding: 0;
+        height: 400px;
+    }
+    .merch-header-section > div{
+        padding-top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .merch-header-section > div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .merch-header-section > h1{
+        width: 100%;
+        text-align: right;
+        padding: 0;
+        margin-right: 20px;
+        transform: translate(-50px,-80px);
+        text-shadow: 2px 2px black;
+    }
+
+    .merch-selfcare-section{
+        padding: 0;
+        padding-top:20px ;
+        flex-direction: column;
+    }
+    .merch-selfcare-section > div:nth-child(2){
+        padding: 0;
+        padding-top: 20px;
+    }
+    .merch-selfcare-section > div img{
+        max-width: 100%;
+        width: 100%;
+        object-fit: contain;
+
+    } }
