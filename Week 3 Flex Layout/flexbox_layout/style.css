@@ -2,6 +2,8 @@
 body {
     margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+   display: block;
 }
 
 img {
@@ -14,15 +16,14 @@ main {
     display: flex;
     flex-direction: column;
     padding: 0;
-    min-width: auto;
+    width: 100%;
 
 }
 
 .flyers {
         list-style-type: none; 
-        padding-left:0px;
-        width: 100%;
-    
+        padding: 0px;
+        width: 100%;    
 }
 
 @media (min-width: 768px){
@@ -34,23 +35,26 @@ main {
         width: 100%;
     }
 
+
 main ul li {
-    max-width: 30%;
-    padding: 2% 1%;
+    flex-grow: 1; 
     display: inline-block;
-    max-height: 1000px;
-    
+    max-width: 30%;
+    padding-bottom: 50px;
     }
 
+    main ul li:last-child {
+        flex-grow: 10;
+        max-width: 60%;
+        }
 
 main img {
-
-        vertical-align: middle;
-        
+    width: 100%;
+        vertical-align: top;
+         
       }
 
-}
-
+    }
 /* COLORS */
 
 .bg-black {
@@ -81,9 +85,7 @@ nav {
 nav ul {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
     text-decoration: none;
-
 }
 
 nav ul a {
@@ -113,7 +115,6 @@ nav ul li:last-child {
     nav ul {
         flex-direction: row;
         flex-grow: 1;
-        justify-content: space-evenly;
         align-items: center; 
     }
 
