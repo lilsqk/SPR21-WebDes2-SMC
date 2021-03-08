@@ -32,7 +32,8 @@ main {
         flex-direction: row;
         flex-wrap: wrap;
         padding: 20px 40px;
-        width: 100%;
+        justify-content: space-around;
+
     }
 
 
@@ -51,6 +52,7 @@ main ul li {
 main img {
     width: 100%;
         vertical-align: top;
+        max-height: 500px;
          
       }
 
