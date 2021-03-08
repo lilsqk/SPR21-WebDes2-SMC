@@ -1,10 +1,54 @@
 /* GENERAL RULES */
 body {
     margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
     max-width: 100%;
+}
+
+/* IMAGE GRID */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    min-width: auto;
+
+}
+
+.flyers {
+        list-style-type: none; 
+        padding-left:0px;
+        width: 100%;
+    
+}
+
+@media (min-width: 768px){
+    main {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 20px 40px;
+        width: 100%;
+    }
+
+main ul li {
+    max-width: 30%;
+    padding: 2% 1%;
+    display: inline-block;
+    max-height: 1000px;
+    
+    }
+
+
+main img {
+
+        vertical-align: middle;
+        
+      }
+
 }
 
 /* COLORS */
@@ -26,29 +70,11 @@ img {
     background-color:rgb(94, 255, 0);
 }
 
-/* FLEX ORDER */
-
-.o-m1 {
-    order: -2;
-}
-
-.o-m1 {
-    order: -1;
-}
-
-.o-1 {
-    order: 1;
-}
-
-.o-2 {
-    order: 2;
-}
-
 /* NAVIGATION */
 
 nav {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
 }
 
 
@@ -103,6 +129,8 @@ nav ul li:last-child {
         border-right: none;
     }
 
+/* FLEX ORDER */
+
     nav ul li:first-child {
         border-right: none;
         order: -1;
@@ -119,22 +147,4 @@ nav ul li:last-child {
 nav ul li:nth-child(4) {
     border-left: 2px solid white;
 }
-
-    /* FLEX ORDER */
-
-    .o-b-m2 {
-        order: -2;
-    }
-
-    .o-b-m1 {
-        order: -1;
-    }
-
-    .o-b-1 {
-        order: 1;
-    }
-
-    .o-b-2 {
-        order: 2;
-    }
 }
