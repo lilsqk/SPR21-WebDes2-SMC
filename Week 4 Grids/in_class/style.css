@@ -1,2 +1,46 @@
 @import url("reset.css");
 @import url("colors.css");
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+}
+
+.grid-item:first-child {
+    grid-column: 1 / span 2;
+}
+
+.grid-item:nth-child(3) {
+    grid-row: 3 / span 2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    section {
+        width: 760px;
+        margin: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 1fr 1fr;
+        height: 50vh;
+    }
+
+    .grid-item:nth-child(3) {
+        grid-row: 1 / 3;
+        grid-column: 4 / 5;
+    }
+
+    .grid-item:nth-child() {
+        grid-row: auto;
+    }
+}
+
