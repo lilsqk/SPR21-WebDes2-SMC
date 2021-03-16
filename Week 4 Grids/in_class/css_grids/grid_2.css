@@ -4,13 +4,23 @@
     height: 100vh;
 }
 
+.grid-item {
+    background-size: cover;
+}
+
+
 .grid-item:first-child {
     grid-column: 1 / span 2;
+    background-image: url('MutualAid1.jpeg');
 }
+
+
+
 
 .grid-item:nth-child(2) {
     grid-column: 3 ;
     grid-row: 1 / span 2;
+    background-image: url('MutualAid2.png');
 
 
 }
@@ -19,12 +29,14 @@
 .grid-item:nth-child(3) {
     grid-column: 1 ;
     grid-row: 2 ;
+    background-image: url('MutualAid3.jpeg');
 
 }
 
 .grid-item:nth-child(4) {
     grid-column: 2 ;
     grid-row: 2 ;
+    background-image: url('MutualAid4.jpeg');
 
 
 }
