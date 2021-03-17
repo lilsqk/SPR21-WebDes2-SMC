@@ -1,0 +1,36 @@
+@import url("reset.css");
+@import url("colors.css");
+@import url("grid.css");
+
+body {
+    font-family: Open Sans;
+}
+
+article {
+    min-height: 300px;
+}
+
+.jumbotron {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    background-size: cover;
+    background-position: middle center;
+}
+
+.jumbotron h1,
+.jumbotron h3 {
+    color: white;
+    font-family: Open Sans;
+    padding-left: 10%;
+    
+}
+
+.jumbotron h1 {
+    font-size: 26px;
+    margin-top: 5%;
+
+}
+
+.jumbotron h3 {
+   margin-top: -10px;
+   font-weight: 300;
+}
