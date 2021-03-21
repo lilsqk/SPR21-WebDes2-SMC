@@ -1,5 +1,7 @@
+@import url("grid.css");
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+
 body {
     margin: 0px;
     font-family: 'Coda', cursive;
@@ -11,8 +13,8 @@ body {
 p {
     text-align: center;
     font-family: 'Coda', cursive;
-    background-color: #a6a6e4; 
-    padding: 10px 10px;
+    color: #a6a6e4; 
+    margin-top: 290px;
 }
 
 h1 {
@@ -25,6 +27,55 @@ img {
 }
 
 /* NAVIGATION */
+
+#menuToggle:checked + ul {
+    display: block;
+    margin-top: 0px;
+    padding: 20px;
+    z-index: 999999;
+}
+
+
+#menuToggle {
+    display: none;
+}
+
+#menutoggle:checked +ul{
+    display:flex;
+}
+
+
+#toggleButton {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    height: 30px;
+    float: right;
+}
+
+header nav ul {
+    display: none;
+    padding-left: 0px;
+    list-style: none;
+}
+
+#menuToggle:checked + ul {
+    display: flex;
+}
+
+@media(min-width: 768px) {
+ 
+
+    label[for=menuToggle] {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        margin-top: 0px;
+    }
+
+  }
 
 nav {
     display: flex;
@@ -74,7 +125,6 @@ nav ul li:last-child {
         flex-grow: 1;
         text-align: center;
         padding: 0px 0px;
-        margin: -12px;
     }
 
     nav ul li:last-child {
@@ -107,3 +157,34 @@ nav ul li:last-child {
     background-image: url('home-bg.png');
     margin-top: -20px;
 }
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .videoWrapper2 {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .videoWrapper2 iframe {
+    position: absolute;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 35%;
+  }

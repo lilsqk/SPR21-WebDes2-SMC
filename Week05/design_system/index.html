@@ -10,6 +10,10 @@
 <body>
     <header>
         <nav class="bg-black">
+            <label for="menuToggle">
+                <img src="hamburger.png" alt="menu toggle button" id="toggleButton">
+            </label>
+            <input type="checkbox" id="menuToggle"/>
             <ul class="bg-black">
                 <li><a href="#"><img src="discakes logo.png" alt="our logo" class="logo"></a></li>
                 <li><a href="#"></a>&lt; HOME &gt;</li>
@@ -20,7 +24,27 @@
         </nav>
     </header>
     <main class="home">
-        <h1>It's a header</h1>
+        <!-- FULL WIDTH, MD: 75% + 25%, LG: 75% + 25% -->
+        <section class="flex-container">
+            <article class="videoWrapper">
+                <div class="segment">
+                    <iframe src="https://www.youtube.com/embed/zvN3klYkaS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div></article>
+        </section>
+         <!-- FULL WIDTH, MD: 50%, LG: 33% -->
+         <section class="flex-container">
+            <article class="w-md-50 w-lg-33 videoWrapper2 bg-black">
+                <div class="segment">
+                    <iframe src="https://www.youtube.com/embed/cRvwSYFIuNk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Districk</p>
+                </div></article>
+            <article class="w-md-50 w-lg-33 videoWrapper2 bg-black">
+                <div class="segment">
+                    <iframe src="https://www.youtube.com/embed/lqBtFotEgOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div></article>
+            <article class="w-md-50 w-lg-33 videoWrapper2 bg-black">
+                <div class="segment">
+                    <iframe src="https://www.youtube.com/embed/QYxIy1WFxZ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div></article>
+        </section>
     </main>
     <footer></footer>
 </body>
