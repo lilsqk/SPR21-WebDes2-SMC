@@ -1,0 +1,188 @@
+* {
+    background-color:black;
+}
+
+p {
+    margin-bottom:20px;
+}
+
+body {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h3 {
+    border: 1px solid lime;
+    color: lime;
+    font-family: 'Coda', cursive;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.flyers li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lime;
+}
+
+
+.flyers li:first-child {
+ background-image: url('/design_system/imgs/flyer1.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 20px;
+ border: 1px solid lime;
+}
+
+.flyers li:nth-child(2) {
+    background-image: url('/design_system/imgs/flyer4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+.flyers li:nth-child(3) {
+    background-image: url('/design_system/imgs/flyer3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .flyers li:nth-child(4) {
+    background-image: url('/design_system/imgs/flyer7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .flyers li:nth-child(5) {
+    background-image: url('/design_system/imgs/flyer5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .flyers li:nth-child(6) {
+    background-image: url('/design_system/imgs/flyer6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+
+
+   .raves li {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lime;
+}
+
+.raves li:first-child {
+ background-image: url('/design_system/imgs/rave1.png');
+ background-size: contain;
+ background-repeat: no-repeat;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 20px;
+ border: 1px solid lime;
+}
+
+.raves li:nth-child(2) {
+    background-image: url('/design_system/imgs/rave2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+.raves li:nth-child(3) {
+    background-image: url('/design_system/imgs/rave3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .raves li:nth-child(4) {
+    background-image: url('/design_system/imgs/rave4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .raves li:nth-child(5) {
+    background-image: url('/design_system/imgs/flyer5.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+   .raves li:nth-child(6) {
+    background-image: url('/design_system/imgs/flyer6.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+   }
+
+
+
+/* IMAGE GRID */
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.flyers {
+        list-style-type: none; 
+        padding: 0px;
+        width: 100%;    
+}
+
+.raves {
+        list-style-type: none; 
+        padding: 0px;
+        width: 100%;    
+
+}
+
+
+@media (min-width: 768px){
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-betwee ;
+
+    }
+
+    .flyers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        align-items: top;
+    }
+
+    .raves {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        align-items: top;
+    }
+
+
+main ul li {
+    flex-grow: 1; 
+    max-width: 33%;
+    padding-bottom: 20px;
+ 
+    }
+
+
+
+main img {
+    width: 100%;
+        vertical-align: top;
+        max-height: 500px;
+         
+      }
+
+    }
+

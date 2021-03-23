@@ -1,0 +1,6 @@
+.about {
+    background-image: url('/design_system/imgs/about-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
