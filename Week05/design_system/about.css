@@ -4,3 +4,8 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
+p {
+    margin-top: 0;
+    text-align: left;
+    padding: 10px;
+}
