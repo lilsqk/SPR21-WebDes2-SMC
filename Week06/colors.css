@@ -1,0 +1,31 @@
+/* BACKGROUND COLORS */
+
+.bg-smoke {
+    color:rgba(18, 98, 202, 0.829)
+}
+.bg-red {
+    background-color: rgb(226, 82, 66);
+}
+
+.bg-green {
+    background-color: rgb(106, 179, 138);
+}
+
+.bg-blue {
+    background-color: rgb(48, 105, 180);
+}
+
+.bg-yellow {
+    background-color: rgb(222, 224, 85);
+}
+
+.bg-purple {
+    background-color: rgb(154, 96, 212);
+}
+
+
+
+/* TEXT COLORS */
+.txt-light {
+    color: white;
+}

@@ -1,0 +1,15 @@
+@import url('reset.css');
+@import url('colors.css');
+@import url('grid.css');
+@import url('utils.css');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#habitat {
+    background-image: url('habitat.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
