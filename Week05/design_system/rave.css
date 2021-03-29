@@ -19,6 +19,14 @@ h3 {
     padding-left: 30px;
 }
 
+.greenbox {
+    width: 300px;
+    height: 300px;
+    border: 1px solid lime;
+    margin-bottom: 20px;
+
+}
+
 .flyers li {
     margin-left: 10px;
     margin-right: 10px;
