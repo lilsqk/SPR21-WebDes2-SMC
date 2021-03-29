@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+/* NAVIGATION */
+.logo {
+  font-family: 'Dela Gothic One', cursive;
+}
+body {
+  margin: 0;
+  font-family: 'open sans';
+}
+
+a {
+  text-decoration: none}
+
+.header, 
+.site-nav ul {
+  display: flex;
+  flex-direction: column;
+flex-wrap: nowrap; }
+
+.header-wrapper {
+  padding: 2em;
+  background: floralwhite}
+
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 1em;
+  align-self: center;
+  color: seagreen;
+  font-size: 2em;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+  
+  
+.site-nav a {
+    display: block;
+    padding: .7em;
+    text-align: center;
+    color: #3d3d3d;
+    font-size: 1.2em;
+    transition: background-color .3s, color .3s;
+}
+.site-nav a:hover {
+      color: seagreen; }
+  }
+
+
+.site-content {
+  min-height: 600px;
+  background: burlywood;}
+
+
+
+#menuToggle:checked + .site-nav ul {
+    display: block;
+    margin-top: 0px;
+    padding: 20px;
+    z-index: 999999;
+}
+
+
+#menuToggle {
+    display: none;
+}
+
+#menutoggle:checked + .site-nav ul{
+    display:flex;
+}
+
+
+#toggleButton {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-right: 5px;
+    height: 100px;
+    float: right;
+}
+
+
+#menuToggle:checked + ul {
+    display: flex;
+}
