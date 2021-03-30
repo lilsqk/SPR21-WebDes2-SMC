@@ -12,6 +12,12 @@ body {
   font-family: 'open sans';
 }
 
+main {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   text-decoration: none;
 }
@@ -178,4 +184,3 @@ ul {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
