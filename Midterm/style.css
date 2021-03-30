@@ -1,8 +1,10 @@
+@import url("grid.css");
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 /* NAVIGATION */
 .logo {
   font-family: 'Dela Gothic One', cursive;
+  font-size: 28px !important;
 }
 body {
   margin: 0;
@@ -10,13 +12,20 @@ body {
 }
 
 a {
-  text-decoration: none}
+  text-decoration: none;
+}
+
+
+input#toggle {
+  display: none;
+}
 
 .header, 
-.site-nav ul {
+.main-navigation ul {
   display: flex;
   flex-direction: column;
-flex-wrap: nowrap; }
+flex-wrap: nowrap; 
+}
 
 .header-wrapper {
   padding: 2em;
@@ -34,7 +43,7 @@ flex-wrap: nowrap; }
   font-size: 2em;
 }
 
-.site-nav ul {
+ ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -44,15 +53,15 @@ flex-wrap: nowrap; }
 
   
   
-.site-nav a {
-    display: block;
+ul a {
     padding: .7em;
     text-align: center;
     color: #3d3d3d;
     font-size: 1.2em;
     transition: background-color .3s, color .3s;
 }
-.site-nav a:hover {
+
+ul a:hover {
       color: seagreen; }
   }
 
@@ -62,38 +71,90 @@ flex-wrap: nowrap; }
   background: burlywood;}
 
 
-
-#menuToggle:checked + .site-nav ul {
+#main-navigation label {
     display: block;
-    margin-top: 0px;
-    padding: 20px;
-    z-index: 999999;
-}
+  }
 
+#main-navigation input {
+    display: noneblock;
+  }
+ 
+#main-navigation label img {
+    width: 20%;
+  }
 
-#menuToggle {
-    display: none;
-}
-
-#menutoggle:checked + .site-nav ul{
-    display:flex;
-}
-
-
-#toggleButton {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    padding-right: 5px;
-    height: 100px;
+#main-navigation label {
+    display: block;
+    cursor: pointer;
     float: right;
+    cursor: pointer;
+    float: left;
+    margin-top: -90px;
+    }
+
+#main-navigation {
+      display: block;
+    }
+    
+ul {
+      display: none;
+      margin-top: 76px;
+      transition: 800ms;
+    }
+
+#main-navigation a {
+      display: block;
+      padding: 3px;
+      font-size: 14.5px;
+      text-align: center;
+      clear: right;
+    }
+    input[type=checkbox]:checked~ul {
+    display: block;
+  }
+
+
+  @media (min-width: 768px) {
+    #main-navigation label {
+      display: none;
+    }
+    ul {
+      display: flex;
+      margin-top: 76px;
+      transition: 800ms;
+      float: right;
+      margin-top: -3px;
+    }
+
+    li {
+      padding-right: 20px;
+    }
+
+    .logo {
+      float: left;
+      margin-top: -20px;
+    }
+  }
+
+  .jumbotron {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    background-size: cover;
+    background-position: middle center;
 }
 
-
-#menuToggle:checked + ul {
-    display: flex;
+.jumbotron h1,
+.jumbotron h3 {
+    color: white;
+    font-family: Open Sans;    
 }
 
-.visually-hidden {
-  position: absolute;
-  left: -100vw;
+.jumbotron h1 {
+    font-size: 26px;
+    margin-top: 5%;
+
+}
+
+.jumbotron h3 {
+   margin-top: -10px;
+   font-weight: 300;
 }

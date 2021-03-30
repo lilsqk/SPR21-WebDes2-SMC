@@ -11,22 +11,68 @@
 <body>
     
 <div class="header-wrapper">
-    <header class="header">
-        
+    <div id="main-navigation">     
     <a href="#" class="logo">boba story</a>
-    <label for="menuToggle">
+    <label for="toggle">
         <img src="https://cdn4.iconfinder.com/data/icons/basic-user-interface-2/512/User_Interface-03-512.png" alt="menu toggle button" id="toggleButton">
     </label>
-    <input type="checkbox" id="menuToggle" class="visually-hidden"/>
-    <div class="site-nav display-none">
+    <input type="checkbox" id="toggle">
         <ul>
             <li><a href="#">home</a></li>
             <li><a href="#">menu</a></li>
             <li><a href="#">contact</a></li>
         </ul>
-    </div>
+    </div></div>
     </header>
-</div>
+
+    <main>
+        <!-- ALWAYS FULLWIDTH -->
+        <section class="flex-container">
+            <article class="bg-red jumbotron">
+                <h1>Meteor Shower Ahead</h1>
+                <h3>Look out for a rare sighting</h3>
+            </article>
+        </section>
+
+        <!-- FULL WIDTH, MD: 50%, LG: 50% -->
+        <section class="flex-container">
+            <article class="w-md-50">
+                <div class="segment">
+                <img src="https://www.publicdomainpictures.net/pictures/340000/velka/leopard-illustration.jpg">
+                <h3>A tiger's best friend</h3>
+            </div></article>
+            <article class="w-md-50">
+                <div class="segment">
+                <img src="https://www.publicdomainpictures.net/pictures/340000/velka/leopard-illustration.jpg">
+                <h3>Why not kick it with a tiger?</h3>
+            </div></article>
+        </section>
+
+        <!-- FULL WIDTH, MD: 50%, LG: 33% -->
+        <section class="flex-container">
+            <article class="bg-red w-lg-33">
+                <div class="segment">
+                    <h1>Support our website by donating!</h1>
+                    <button>Donate Here!</button>
+                </div></article>
+            <article class="bg-purple w-md-50 w-lg-33">
+                <div class="segment">
+                <img src="https://www.publicdomainpictures.net/pictures/340000/velka/leopard-illustration.jpg">
+            </div></article>
+            <article class="bg-blue w-md-50 w-lg-33">
+                <div class="segment">
+                <img src="https://www.publicdomainpictures.net/pictures/340000/velka/leopard-illustration.jpg">
+            </div></article>
+        </section>
+
+        <!-- FULL WIDTH, MD: 50%, LG: 15% -->
+        <section class="flex-container">
+            <article class="bg-purple w-md-50 w-lg-33">7</article>
+            <article class="bg-blue w-md-50 w-lg-66">8</article>
+            <article class="bg-red w-md-50 w-lg-25">9</article>
+            <article class="bg-purple w-md-50 w-lg-75">10</article>
+        </section>
+    </main>
     
 </body>
 </html>
