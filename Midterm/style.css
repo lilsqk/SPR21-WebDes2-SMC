@@ -92,3 +92,8 @@ flex-wrap: nowrap; }
 #menuToggle:checked + ul {
     display: flex;
 }
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+}
