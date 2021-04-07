@@ -76,7 +76,10 @@ ul a:hover {
     }
   
 
-
+.w-md-50 img {
+  object-fit: cover;
+  height: 400px;
+}
 .site-content {
   min-height: 600px;
   background: burlywood;}
@@ -149,7 +152,7 @@ ul {
   }
 
   .jumbotron {
-    background-image: url("header-img.jpeg");
+    background-image: url("boba-story-cover.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
