@@ -2,6 +2,8 @@
 @import url("colors.css");
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
+
+
 /* NAVIGATION */
 .logo {
   font-family: 'Dela Gothic One', cursive;
@@ -10,6 +12,7 @@
 body {
   margin-top: 0;
   font-family: 'open sans';
+  background: floralwhite;
 }
 
 main {
@@ -39,7 +42,8 @@ flex-wrap: nowrap;
 
 .header-wrapper {
   padding: 2em;
-  background: floralwhite}
+  background: floralwhite;
+}
 
 .header {
   max-width: 1200px;
@@ -152,6 +156,7 @@ ul {
   }
 
   .jumbotron {
+    margin-top: 3%;
     background-image: url("boba-story-cover.png");
     background-size: cover;
     background-position: center center;
@@ -203,7 +208,18 @@ ul {
   width: 400px;
   height: 400px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+
 }
+
+.greenbox img {
+  height: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .menu-section {
   display: flex;
