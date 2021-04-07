@@ -149,27 +149,51 @@ ul {
   }
 
   .jumbotron {
-    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    background-image: url("header-img.jpeg");
     background-size: cover;
-    background-position: middle center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.jumbotron img {
+  width: 20%;
 }
 
 .jumbotron h1,
 .jumbotron h3 {
-    color: white;
-    font-family: Open Sans;    
+    color: rgb(0, 0, 0);
+    font-family: Open Sans;
+    float: right;
+    background-color: white;
+   padding: 15px;
 }
 
 .jumbotron h1 {
     font-size: 26px;
-    margin-top: 5%;
+    margin-top: 15%;
+    padding-right: 50px;
 
 }
 
 .jumbotron h3 {
-   margin-top: -10px;
+  margin-top: -2%;
    font-weight: 300;
+   margin-left: 60%;
+   padding-right: 50px;
 }
+
+
+@media (max-width: 768px) {
+.jumbotron h3 {
+  font-size: 12px;
+  margin-left: 20%;
+}
+.jumbotron h1 {
+  font-size: 18px;
+}
+}
+
 
 /* MENU PAGE */
 .greenbox {
