@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myHeading{
+            background-color: aquamarine;
+        }
+        #myDiv {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myHeading">Hello, <span id="userName">World</span></h1>
+
+    <div id="myDiv"></div>
+
+    <audio id="audio">
+        <source src="montero.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+
+    <button id="colorChange" href="#">Change the color!</button>
+    <button id="audioPlay">Play a song!</button>
+
+
+    <script>
+     console.log("This is your page talking to you!");
+
+     let answer = prompt("What's your name?");
+     console.log(answer);
+     document.getElementById("userName").innerText = answer;
+
+     let bigDiv = document.getElementById("myDiv");
+     let trigButton = document.getElementById("colorChange");
+     let docHeading = document.getElementById("myHeading");
+
+     let audioTrig = document.getElementById("audioPlay");
+     let myAudio = document.getElementById("audio");
+
+     console.log(trigButton);
+     console.log(audioTrig);
+
+  
+     audioTrig.addEventListener("click", function(){
+
+        audio.play();
+
+
+});
+     
+     trigButton.addEventListener("click", function(){
+        let userAnswer = confirm("Are you sure you want to do this?");
+        console.log(userAnswer);
+        
+        if(userAnswer == true) {
+            docHeading.style.backgroundColor = "plum";
+            bigDiv.style.backgroundColor = "salmon";
+            let smallHeading = document.createElement("h5");
+            smallHeading.style.fontStyle = "italic";
+            smallHeading.innerText = "This is red now!";
+            bigDiv.appendChild(smallHeading);
+            alert("The changes are now complete.");
+        }
+
+        else{
+            alert("No action will be taken.");
+        }
+     });
+
+
+
+
+
+    </script>
+</body>
+</html>
