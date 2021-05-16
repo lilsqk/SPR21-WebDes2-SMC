@@ -4,6 +4,8 @@ let carouselImages2 = ["kittens1.jpeg", "kittens2.jpeg", "kittens3.jpeg"];
 let carouselImages3 = ["quokkas1.jpeg", "quokkas2.jpeg", "quokkas3.jpeg"];
 
 let currentIndex = 2;
+let currentArray = carouselImages;
+
 let carouselIMG = document.getElementById("carousel-img");
 
 //for the select: 
@@ -17,16 +19,16 @@ let natureOptions = ['beaches', 'forests', 'deserts'];
 
 let changeSlide = function(){
     if(currentIndex === 0){
-        carouselIMG.src = carouselImages[1];
+        carouselIMG.src = currentArray[1];
     }
     else if(currentIndex === 1){
-        carouselIMG.src = carouselImages[2];
+        carouselIMG.src = currentArray[2];
     }
     else {
-        carouselIMG.src = carouselImages[0];
+        carouselIMG.src = currentArray[0];
     
     }
-    if (CurrentIndex = currentIndex === 2) {
+    if (currentIndex === 2) {
         currentIndex = 0;
     }
 
@@ -35,58 +37,19 @@ let changeSlide = function(){
     }
 }
 
-let changeSlide2 = function(){
-    if(currentIndex === 0){
-        carouselIMG.src = carouselImages2[1];
-    }
-    else if(currentIndex === 1){
-        carouselIMG.src = carouselImages2[2];
-    }
-    else {
-        carouselIMG.src = carouselImages2[0];
-    
-    }
-    if (CurrentIndex = currentIndex === 2) {
-        currentIndex = 0;
-    }
-
-    else {
-        currentIndex = currentIndex+1;
-    }
-}
-
-let changeSlide3 = function(){
-    if(currentIndex === 0){
-        carouselIMG.src = carouselImages3[1];
-    }
-    else if(currentIndex === 1){
-        carouselIMG.src = carouselImages3[2];
-    }
-    else {
-        carouselIMG.src = carouselImages3[0];
-    
-    }
-    if (CurrentIndex = currentIndex === 2) {
-        currentIndex = 0;
-    }
-
-    else {
-        currentIndex = currentIndex+1;
-    }
-}
 
 let updateSlider = function () {
     let selectedCategory = categorySelect.value;
     if (selectedCategory === 'kittens') {
-        changeSlide2();
+        crrentArray = carouselImages2;
     }
 
     if (selectedCategory === 'puppies') {
-        changeSlide();
+        currentArray = carouselImages;
     }
 
     if (selectedCategory === 'quokkas') {
-        changeSlide3();
+        currentArray = carouselImages3;
     }
 }
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to JQuery</title>
+    <style>
+        img {
+            position: relative;
+            height: 650px;
+        }
+    </style>
+</head>
+<body>
+    <div id="paragraphs">
+    <p id="myP">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sit ipsa mollitia quia, nemo cumque. Accusantium esse illo fuga fugiat a itaque reprehenderit! Modi magni, consectetur quaerat ad amet expedita.</p>
+    </div>
+    <div class="img-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Danaus_plexippus_caterpillar_1.jpg" alt="caterpillar">
+    </div>
+
+    <hr>
+    <button id="addMore">Add another line</button>
+    <button id="removeSome">Remove clones</button>
+    <button id="removeImg">Toggle image</button>
+    <button id="fadeImgOut">Fade Image Out</button>
+    <button id="slideImgDown">Slide Down</button>
+    <button id="customAni">Custom Animation</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // let addTextB = document.getElementById("addMore");
+        // let textP = document.getElementById("myP");
+
+        // addTextB.addEventListener("click", function(){
+        //     let contentP = textP.innerText;
+
+        //     let newP = document.createElement('p');
+        //     newP.innerText = contentP;
+        //     document.getElementById("paragraphs").appendChild(newP);
+        // });
+        $("#addMore").click(function(){
+            let cloneP = $("#myP").clone();
+            cloneP.addClass("cloned");
+            $("#paragraphs").append( cloneP );
+            //$("#paragraphs").append( $("#myP").clone());
+        });
+
+        $("#removeSome").click(function(){
+            $(".cloned").remove();
+        });
+
+        $("#removeImg").click(function(){
+            $(".img-container img").fadeToggle();
+
+        });
+
+        $("#fadeImgOut").click(function(){
+            $(".img-container img").fadeOut(2000, function(){
+                $(".img-container").append("<h3>Image has finished fading out.</h3>");
+            });
+
+        });
+
+        $("#slideImgDown").click(function(){
+            $(".img-container img").slideDown();
+        });
+      
+        $("#customAni").click(function(){
+            $(".img-container img").animate( 
+                //object with CSS properties to animate
+                {
+                    width: "0%", 
+                    left: 500,
+                } );
+        })
+
+
+    </script>
+
+</body>
+</html>
