@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Gallery</title>
+    <style>
+
+        #gridContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #loadMore {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10%;
+        }
+
+        #loadLess {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        img {
+            width: 250px;
+            padding-top: 25px;
+
+
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div id="gridContainer">
+        
+        <div id="img1"><img src="swim1.jpeg" alt=""><br>
+        <button id="hideImg1">Toggle Image</button></div>
+
+
+        <div id="img2"><img src="swim2.jpeg" alt=""><br>
+            <button id="hideImg2">Toggle Image</button></div>
+
+        <div id="img3"><img src="swim3.jpeg" alt=""><br>
+            <button id="hideImg3">Toggle Image</button></div>
+
+        <div id="img4"><img src="swim4.jpeg" alt=""><br>
+            <button id="hideImg4">Toggle Image</button></div>
+
+    </div>
+    <div id="loadMore">
+    <button id="addMore">Load More Images</button>
+</div>
+<div id="loadLess">
+    <button id="addLess">Clear Added Images</button>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+         $("#hideImg1").click(function(){
+            $("#img1 img").fadeToggle();
+         });
+
+         $("#hideImg2").click(function(){
+            $("#img2 img").fadeToggle();
+         });
+
+         $("#hideImg3").click(function(){
+            $("#img3 img").fadeToggle();
+         });
+
+         $("#hideImg4").click(function(){
+            $("#img4 img").fadeToggle();
+         });
+
+
+
+         $("#addMore").click(function(){
+           $( "#gridContainer" ).append( $( '<img id="img5" src="swim1.jpeg" />' ) );
+
+            //$("#paragraphs").append( $("#myP").clone());
+        });
+
+        $("#addLess").click(function(){
+            $( "#img5" ).remove();
+            //$("#paragraphs").append( $("#myP").clone());
+        });
+
+         
+    </script>
+</body>
+</html>
