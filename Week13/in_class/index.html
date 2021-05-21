@@ -13,14 +13,27 @@
 
     <div class="jqueryUI-tabs">
         <ul>
-            <li><a href="#food"></a>Food</li>
-            <li><a href="#nature"></a>Nature</li>
-            <li><a href="#animals"></a>Animals</li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#nature">Nature</a></li>
+            <li><a href="#animals">Animals</a></li>
         </ul>
-
+        <div id="food">
+            <p>Food will be here</p>
+        </div>
+        <div id="nature">
+            <p>Nature will be here</p>
+        </div>
+        <div id="animals">
+            <p>Animals will be here</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="libs/jqueryui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.jQueryUI-tabs').tabs();
+        });
+    </script>
 </body>
 </html>
