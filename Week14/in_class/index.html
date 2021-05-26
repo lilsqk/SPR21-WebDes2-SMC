@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fancybox Example</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fille, minmax(200px, 1fr));
+            gap: 15px;
+        }
+    </style>
 </head>
 <body>
+    <main>
+        <a href="big1.jpg" data-fancybox>
+            <img src="small1.jpg" alt="small quokka">
+        </a>
+
+        <a href="big2.jpg" data-fancybox>
+            <img src="small2.jpg" alt="small 2 quokka">
+        </a>
+    </main>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
