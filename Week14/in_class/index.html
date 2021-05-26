@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fancybox Example</title>
+    <title>fancybox="gallery" Example</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
     <style>
         main {
             display: grid;
-            grid-template-columns: repeat(auto-fille, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 15px;
         }
     </style>
 </head>
 <body>
     <main>
-        <a href="big1.jpg" data-fancybox>
+        <a href="big1.jpg" data-fancybox="gallery" data-caption="quokka the quokks">
             <img src="small1.jpg" alt="small quokka">
         </a>
 
-        <a href="big2.jpg" data-fancybox>
+        <a href="big2.jpg" data-fancybox="gallery">
+            <img src="small2.jpg" alt="small 2 quokka">
+        </a>
+        <a href="big1.jpg" data-fancybox="gallery">
+            <img src="small1.jpg" alt="small quokka">
+        </a>
+
+        <a href="big2.jpg" data-fancybox="gallery">
+            <img src="small2.jpg" alt="small 2 quokka">
+        </a>
+        <a href="big1.jpg" data-fancybox="gallery">
+            <img src="small1.jpg" alt="small quokka">
+        </a>
+
+        <a href="big2.jpg" data-fancybox="gallery">
+            <img src="small2.jpg" alt="small 2 quokka">
+        </a>
+        <a href="big1.jpg" data-fancybox="gallery">
+            <img src="small1.jpg" alt="small quokka">
+        </a>
+
+        <a href="big2.jpg" data-fancybox="gallery">
             <img src="small2.jpg" alt="small 2 quokka">
         </a>
     </main>
