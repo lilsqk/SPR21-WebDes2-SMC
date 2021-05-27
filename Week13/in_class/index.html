@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="libs/jqueryui/jquery-ui.css">
-
+    <style>
+        .draggable-comp {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
     <title>JQuery UI Example</title>
 </head>
 <body>
@@ -24,7 +33,10 @@
             <p>Nature will be here</p>
         </div>
         <div id="animals">
-            <p>Animals will be here</p>
+            <div class="draggable-comp" style="background-image: url(kittens1.png)";></div>
+            <div class="draggable-comp" style="background-image: url(kittens2.jpeg)";></div>
+            <div class="draggable-comp" style="background-image: url(puppies1.jpeg)";></div>
+            <div class="draggable-comp" style="background-image: url(quokkas1.jpeg)";></div>
         </div>
     </div>
 
@@ -41,8 +53,12 @@
                 axis: "x",
                 stop: function(){
                     myTabs.tabs("refresh")}
-           
-            });
+                    
+  });
+              
+  $( ".draggable-comp" ).draggable();
+                    //closes the ready() function:
+         
         });
     </script>
 </body>
