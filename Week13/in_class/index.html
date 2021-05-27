@@ -56,6 +56,7 @@
     <script>
         $(document).ready(function(){
             let count = 0;
+            let alreadyAdded = [];
             let myTabs = $('.jqueryUI-tabs').tabs({
                 collapsible: true,
                 event: "click" });
@@ -70,9 +71,20 @@
   $( ".draggable-comp" ).draggable();
   $( ".checkout-area" ).droppable({
       drop: function(event,ui){
-            count = count+1;
+
+    
+            
             $(this).addClass( "ui-state-highlight" );
-            $('#selectCount').text(count);
+            if(alreadyAdded.includes(ui.draggable[0]
+            )){
+            }
+            else {
+                alreadyAdded.push(ui.draggable[0]);
+                count = count+1;
+                $('#selectCount').text(count);
+
+            } 
+            
       }
   })
                     //closes the ready() function:
