@@ -29,10 +29,20 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="libs/jqueryui/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script>
         $(document).ready(function(){
-            $('.jqueryUI-tabs').tabs();
+            let myTabs = $('.jqueryUI-tabs').tabs({
+                collapsible: true,
+                event: "click" });
+
+            myTabs.find(".ui-tabs-nav").sortable({
+                axis: "x",
+                stop: function(){
+                    myTabs.tabs("refresh")}
+           
+            });
         });
     </script>
 </body>
