@@ -15,6 +15,12 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+        .checkout-area {
+            min-height: 300px;
+            border: 1px solid darkgray;
+            padding: 20px;
+        }
     </style>
     <title>JQuery UI Example</title>
 </head>
@@ -38,6 +44,9 @@
             <div class="draggable-comp" style="background-image: url(puppies1.jpeg)";></div>
             <div class="draggable-comp" style="background-image: url(quokkas1.jpeg)";></div>
         </div>
+        <div class="checkout-area">
+            <h2>Drop your selection here.</h2>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -57,6 +66,11 @@
   });
               
   $( ".draggable-comp" ).draggable();
+  $( ".checkout-area" ).droppable({
+      drop: function(event,ui){
+            $(this).addClass( "ui-state-highlight" );
+      }
+  })
                     //closes the ready() function:
          
         });
