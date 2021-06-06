@@ -1,3 +1,5 @@
+@import "blog.css"; 
+
 /* GENERAL */
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -7,6 +9,9 @@ h1 {
 .top {
     display: flex;
     flex-direction: row;
+}
+body {
+  margin: 0px;
 }
 
 .hero {
