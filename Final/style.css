@@ -1,0 +1,153 @@
+/* GENERAL */
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.hero {
+    width: 50%;
+    display: flex;
+}
+
+.text-section {
+    background-color: white;
+    width: 50%;
+    padding: 50px;
+}
+
+/* NAVIGATION */
+.logo {
+    width: 50px;
+  }
+
+  
+  main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  input#toggle {
+    display: none;
+  }
+  
+  .header, 
+  .main-navigation ul {
+    display: flex;
+    flex-direction: column;
+  flex-wrap: nowrap; 
+  }
+  
+  .header-wrapper {
+    background: rgb(67, 67, 240);
+    padding: 40px;
+  }
+  
+  .header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  
+   ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: space-between;
+      border-bottom: none;
+  }
+  
+    
+    
+  ul a {
+      padding: .7em;
+      text-align: center;
+      color: white;
+      font-size: 1.2em;
+      transition: background-color .3s, color .3s;
+  }
+  
+  ul a:hover {
+        color: black; 
+      }
+    
+  
+
+  #main-navigation label {
+      display: block;
+    }
+  
+  #main-navigation input {
+      display: noneblock;
+    }
+   
+  #main-navigation label img {
+      width: 40%;
+      float: right;
+    }
+  
+  #main-navigation label {
+      display: block;
+      cursor: pointer;
+      float: right;
+      cursor: pointer;
+      }
+  
+  #main-navigation {
+        display: block;
+      }
+      
+  ul {
+        display: none;
+        margin-top: 76px;
+        transition: 800ms;
+      }
+  
+  #main-navigation a {
+        display: block;
+        padding: 3px;
+        font-size: 14.5px;
+        text-align: center;
+        clear: right;
+      }
+      input[type=checkbox]:checked~ul {
+      display: block;
+    }
+  
+  
+    @media (min-width: 768px) {
+      #main-navigation label {
+        display: none;
+      }
+      ul {
+        display: flex;
+        margin-top: 76px;
+        transition: 800ms;
+        float: right;
+        margin-top: -3px;
+      }
+  
+      li {
+        padding-right: 20px;
+      }
+  
+      .logo {
+        float: left;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
+    }
