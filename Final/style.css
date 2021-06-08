@@ -266,11 +266,13 @@ justify-content: center;
   
   #main-navigation a {
         display: block;
-        padding: 3px;
+        padding-bottom: 20px;
         font-size: 14.5px;
         text-align: center;
         clear: right;
       }
+
+
       input[type=checkbox]:checked~ul {
       display: block;
     }
@@ -296,5 +298,10 @@ justify-content: center;
         float: left;
         margin-top: -20px;
         margin-bottom: -20px;
+      }
+
+      #main-navigation a {
+        display: block;
+        padding: 3px;
       }
     }

@@ -4,11 +4,15 @@
 
 .donate-box {
     display:flex;
-    flex-direction: row;
+    padding: 2% 5%;  
+    display: flex;
+    flex-direction: column;  
 }
 
 .donate-box p {
-   padding: 5px 5%;
+
+   text-align: justify;
+   padding-left: 6%;
 }
 
 .donate-form {
@@ -21,6 +25,16 @@ form {
     
 }
 
+.donate-img {
+    display:flex;
+    justify-content: center;
+    background-image: url('imgs/donate.gif');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    margin-top: 5%;
+}
+
+
 #donate-head {
     background-image: url('imgs/donate.jpeg');
     background-repeat: none;
@@ -29,4 +43,10 @@ form {
     padding: 100px;
 }
 
-.flex-container {}
+@media (max-width: 767px) {
+
+    .donate-img {
+        display: none;
+    }
+    
+}
