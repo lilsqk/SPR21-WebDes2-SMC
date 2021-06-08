@@ -8,10 +8,6 @@ h1 {
     color: white;
 }
 
-.top {
-    display: flex;
-    flex-direction: column;
-}
 
 footer {
   background-color: black;
@@ -35,7 +31,7 @@ main {
 }
 
 p {
-  line-height: 1.5em;
+  line-height: 1.45em;
 }
 
 button {
@@ -52,19 +48,18 @@ button {
 
 
 .hero {
-    width: 100%;
-    display: flex;
-    align-self: center;
-    height:604px;
-    width: auto;
+   background-image: url(imgs/hero.jpeg);
+   background-size: cover;
+   background-repeat: none;;
 }
+
 
 
 
 .text-section {
   display: flex;
   flex-direction: column;
-    background-color: transparent;
+    background-color: #7500fc;
     width: 100%;
 }
 
@@ -78,20 +73,23 @@ button {
 #unlock{
   background-color: #7500fc;
   padding: 30px;
+
   color: white;
   margin-top: -6%;
 
 }
 
 #updates {
-  background-color: white;
-  padding: 5%;
-  color: black;
-
+  color: white;
+  background-color: black; 
+  margin-top: -3%; 
+  padding: 50px;
 }
 
+
+
 #support-coaxial {
-  background-image: url(imgs/hero-2.jpeg);
+  background-image: url(imgs/glitch.gif);
   padding: 10%;
   margin-top: -3%;
   z-index: 99999;
@@ -101,15 +99,67 @@ button {
   background-color:black;
   padding: 5px 25px;
 }
-@media (min-width: 768px) {
-  .top {
-    display: flex;
-    flex-direction: row;
-}
-.large-screen50 {
+
+@media (max-width: 767px) {
+  #updates {
+    margin-top: -5%;
+  }
+  .header-wrapper {
+    background: rgb(0, 0, 0);
+    padding: 0px 20px !important;
+  }
   
-    width: 50vw;
-    flex-direction: row;
+.hero {
+  height: 550px;
+}
+
+#updates {
+  display: none;
+}
+
+#holguin {
+  padding-top: 80px;
+}
+
+  #member {
+    margin-left: 9%;
+  }
+  
+  #support-coaxial {
+    margin-top: -12%;
+    background-image: url(imgs/donate.jpg);
+    background-position: bottom;
+    
+  }
+  
+  .small-screen100 {
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  }
+
+@media (min-width: 768px) {
+  
+.large-screen50 {
+    width: 50%;
+    flex-direction: column;
+}
+
+.large-screen60 {
+  width: 60%;
+  flex-direction: column;
+}
+
+.large-screen40 {
+  width: 40%;
+  flex-direction: column;
 }
 
 .large-screen100 {
@@ -117,38 +167,19 @@ button {
   justify-content: center;
 }
 
-}
-
-
-
-
-@media (max-width: 767px) {
-#updates {
-  margin-top: -5%;
-}
-.header-wrapper {
-  background: rgb(0, 0, 0);
-  padding: 0px 20px !important;
-}
-
-#member {
-  margin-left: 9%;
-}
-
-#support-coaxial {
-  margin-top: -12%;
-  background-image: url(imgs/donate.jpg);
-  background-position: bottom;
+.flex-container {
+  display: flex;
+  flex-wrap:nowrap;
+  flex-direction:row;
   
 }
 
-.small-screen100 {
-  width: 100vw;
-  overflow: hidden;
 }
 
 
-}
+
+
+
 /* NAVIGATION */
 .logo {
     width: 50px;

@@ -1,8 +1,4 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-}
+
 
 .small-screen100 img {
     width: 100%;
