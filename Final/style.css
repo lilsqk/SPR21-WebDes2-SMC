@@ -1,6 +1,7 @@
 @import "blog.css"; 
 @import "about.css"; 
 @import "donate.css"; 
+@import "blog-post.css"; 
 /* HOME PAGE + GENERAL */
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -46,6 +47,7 @@ button {
     font-family: inherit;
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 17px;
 }
 
 
@@ -68,17 +70,16 @@ button {
 
 #holguin {
   background-color: #4343f0;
-  padding: 5%;
+  padding: 30px;
   color: white;
   margin-top: -5%;
 }
 
 #unlock{
   background-color: #7500fc;
-  padding: 5%;
+  padding: 30px;
   color: white;
-  margin-top: -5%;
-  z-index: 1;
+  margin-top: -6%;
 
 }
 
@@ -106,17 +107,20 @@ button {
     flex-direction: row;
 }
 .large-screen50 {
-    display: flex;
-    
-
+  
+    width: 50vw;
+    flex-direction: row;
 }
 
 .large-screen100 {
-  display: flex;
+  
   justify-content: center;
 }
 
 }
+
+
+
 
 @media (max-width: 767px) {
 #updates {
@@ -136,6 +140,11 @@ button {
   background-image: url(imgs/donate.jpg);
   background-position: bottom;
   
+}
+
+.small-screen100 {
+  width: 100vw;
+  overflow: hidden;
 }
 
 

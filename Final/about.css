@@ -35,7 +35,6 @@ color: #17ff02;
 
 @media (min-width: 768px) {
     .large-screen50 {
-        display: flex;
         width: 50vw;
     }
 
@@ -49,7 +48,7 @@ color: #17ff02;
     
  
     .small-screen100 {
-        display: flex;
+     
         width: 100vw;
         overflow: hidden;
     }
