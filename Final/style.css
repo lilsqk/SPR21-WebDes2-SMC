@@ -12,11 +12,10 @@ h1 {
 footer {
   background-color: black;
   color: white;
-  height: 70px;
+  height: 60px;
   position: fixed;
 Width: 100%;
 bottom: 0;
-
 }
 body {
   margin: 0px;
@@ -27,6 +26,7 @@ body {
 main {
   max-width: 1400px;
   margin: auto;
+  padding-bottom: 60px;
   
 }
 
@@ -50,7 +50,7 @@ button {
 .hero {
    background-image: url(imgs/hero.jpeg);
    background-size: cover;
-   background-repeat: none;;
+   background-repeat: none;
 }
 
 
@@ -82,7 +82,7 @@ button {
 #updates {
   color: white;
   background-color: black; 
-  margin-top: -3%; 
+  margin-top: -1%; 
   padding: 50px;
 }
 
@@ -92,7 +92,6 @@ button {
   background-image: url(imgs/glitch.gif);
   padding: 10%;
   margin-top: -3%;
-  z-index: 99999;
 }
 
 #member {
@@ -125,10 +124,6 @@ button {
     margin-left: 9%;
   }
   
-  #support-coaxial {
-    margin-top: -12%;
-    background-image: url(imgs/donate.jpg);
-    background-position: bottom;
     
   }
   
@@ -152,6 +147,7 @@ button {
     flex-direction: column;
 }
 
+
 .large-screen60 {
   width: 60%;
   flex-direction: column;
@@ -163,8 +159,9 @@ button {
 }
 
 .large-screen100 {
-  
-  justify-content: center;
+width: 100%;
+flex-direction: column;
+justify-content: space-around;
 }
 
 .flex-container {
