@@ -54,7 +54,7 @@ button {
 
 .hero {
 
-   background-image: url(imgs/hero.jpeg);
+   background-image: url(imgs/blogpost2.jpeg);
    background-size: cover;
    background-repeat: none;
    background-position: center;
@@ -74,7 +74,7 @@ button {
   background-color: #4343f0;
   padding: 30px; 
   color: white;
-  margin-top: -.5%;
+  margin-top: 0;
 }
 
 #unlock{
@@ -97,15 +97,17 @@ button {
 
 #support-coaxial {
   background-image: url(imgs/glitch.gif);
+  background-size: cover;
+  overflow:hidden;
   padding: 10%;
   display: flex;
 }
+
 
 #member {
   background-color:black;
   padding: 5px 25px;
 }
-
 
 
 @media (min-width: 768px) {
@@ -116,13 +118,12 @@ button {
 }
 
 .large-screen100 {
+  width: 100vw;
   justify-content: center;
 }
 
 
-#member {
-    margin-left: 9%;
-  }
+
   
   .large-screen40 {
     width: 40%;
@@ -146,29 +147,24 @@ button {
   padding: 0px 20px !important;
 }
 
-
-.large-screen100 {
-
-width: 100%;
-flex-direction: column;
-justify-content: space-around;
-}
-
-
-
 #support-coaxial {
-  margin-top: -12%;
   background-image: url(imgs/glitch.gif);
-  background-position: bottom;
-  
+  background-size: cover;
+  overflow:hidden;
+width: 100%;  
+justify-content: center;
 }
+
+
 
 .small-screen100 {
   width: 100vw;
   overflow: hidden;
 }
 
-
+.hero {
+  height: 500px;
+}
 }
 /* NAVIGATION */
 .logo {
