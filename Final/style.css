@@ -53,7 +53,7 @@ button {
     width: 100%;
     display: flex;
     align-self: center;
-    height:607px;
+    height:604px;
     width: auto;
 }
 
@@ -62,7 +62,7 @@ button {
 .text-section {
   display: flex;
   flex-direction: column;
-    background-color: black;
+    background-color: transparent;
     width: 100%;
 }
 
@@ -78,14 +78,27 @@ button {
   padding: 5%;
   color: white;
   margin-top: -5%;
+  z-index: 1;
 
 }
 
 #updates {
-  background-color: #ffffff;
+  background-color: white;
   padding: 5%;
   color: black;
-  margin-top:;
+
+}
+
+#support-coaxial {
+  background-image: url(imgs/hero-2.jpeg);
+  padding: 10%;
+  margin-top: -3%;
+  z-index: 99999;
+}
+
+#member {
+  background-color:black;
+  padding: 5px 25px;
 }
 @media (min-width: 768px) {
   .top {
@@ -98,6 +111,11 @@ button {
 
 }
 
+.large-screen100 {
+  display: flex;
+  justify-content: center;
+}
+
 }
 
 @media (max-width: 767px) {
@@ -108,6 +126,18 @@ button {
   background: rgb(0, 0, 0);
   padding: 0px 20px !important;
 }
+
+#member {
+  margin-left: 9%;
+}
+
+#support-coaxial {
+  margin-top: -12%;
+  background-image: url(imgs/donate.jpg);
+  background-position: bottom;
+  
+}
+
 
 }
 /* NAVIGATION */
