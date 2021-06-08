@@ -1,5 +1,5 @@
 @import "blog.css"; 
-
+@import "about.css"; 
 /* GENERAL */
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -13,6 +13,10 @@ h1 {
 body {
   margin: 0px;
   font-family:'Roboto', sans-serif;
+}
+
+p {
+  line-height: 1.5em;
 }
 
 main {
@@ -63,7 +67,7 @@ main {
   
   .header-wrapper {
     background: rgb(67, 67, 240);
-    padding: 40px;
+    padding: 35px 20px;
   }
   
   .header {
@@ -107,6 +111,7 @@ main {
    
   #main-navigation label img {
       width: 40%;
+      margin-top: -55px;
       float: right;
     }
   
