@@ -11,21 +11,42 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+
+footer {
+  background-color: black;
+  color: white;
+  height: 70px;
+  position: fixed;
+Width: 100%;
+bottom: 0;
+
+}
 body {
   margin: 0px;
   font-family:'Roboto', sans-serif;
+  background-color: black;
 }
 
 main {
-  max-width: 1440px;
+  max-width: 1400px;
   margin: auto;
-  background-color: cream;
+  
 }
 
 p {
   line-height: 1.5em;
 }
 
+button {
+
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px;
+    color: white;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
 
 
 .hero {
@@ -40,7 +61,7 @@ p {
 .text-section {
   display: flex;
   flex-direction: column;
-    background-color: white;
+    background-color: black;
     width: 100%;
 }
 

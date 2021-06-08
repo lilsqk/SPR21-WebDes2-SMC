@@ -2,10 +2,21 @@
     font-size: 13px;
     margin-top: -10px;
 }
+main {
+    color: white;
+    max-width: 1400px;
+
+}
+
+.post img {
+    border: 1px solid white;
+}
+
+.figure {
+    margin: 0px !important;
+}
 
 @media (max-width: 768px) {
-
-
 
     .blog-container {
         padding-top: 25px;
@@ -21,6 +32,12 @@
     display:flex;
 margin: auto; 
 padding: 25px;
+
+padding: 5px;
+}
+
+figcaption {
+    text-align: center;
 }
 }
 
@@ -34,7 +51,7 @@ padding: 25px;
     }
 
 .post img {
- width: 25vw;
+ width: 20vw;
 display:flex;
 margin: auto; 
 padding: 5px;
