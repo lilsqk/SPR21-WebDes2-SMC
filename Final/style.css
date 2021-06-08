@@ -1,7 +1,7 @@
 @import "blog.css"; 
 @import "about.css"; 
 @import "donate.css"; 
-/* GENERAL */
+/* HOME PAGE + GENERAL */
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
@@ -9,30 +9,74 @@ h1 {
 
 .top {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 body {
   margin: 0px;
   font-family:'Roboto', sans-serif;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+  background-color: cream;
+}
+
 p {
   line-height: 1.5em;
 }
 
-main {
-  padding: 15px 42px;
-}
+
 
 .hero {
-    width: 50%;
+    width: 100%;
     display: flex;
+    align-self: center;
+    min-height:  556px;
 }
 
+
+
 .text-section {
+  display: flex;
+  flex-direction: column;
     background-color: white;
-    width: 50%;
-    padding: 50px;
+    width: 100%;
+}
+
+#holguin {
+  background-color: #4343f0;
+  padding: 5%;
+  color: white;
+  margin-top: -3%;
+}
+
+#unlock{
+  background-color: #7500fc;
+  padding: 5%;
+  color: white;
+  margin-top: -5%;
+
+}
+@media (min-width: 768px) {
+  .top {
+    display: flex;
+    flex-direction: row;
+}
+.large-screen50 {
+  width: 50%;
+}
+#holguin {
+  margin: 5%; }
+
+  #unlock{
+    margin: 5%;
+  }
+
+  main {
+    padding: 15px 42px;
+  }
+
 }
 
 /* NAVIGATION */
