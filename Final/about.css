@@ -24,7 +24,12 @@
 .info h2 {
     padding: 6px 50px;
 }
-
+.info-2 {
+    display: flex;
+    flex-direction: column; 
+background-color: #000000;
+color: #17ff02;
+}
 
 @media (min-width: 768px) {
     .large-screen50 {
