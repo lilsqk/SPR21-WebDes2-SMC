@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Donate</title>
 </head>
 
@@ -31,7 +36,7 @@
     </div>
 
     <div class="donate-form">
-      <form action="../form-result.php" target="_blank">
+      <form>
            <label for="name">Name:</label>
            <input type="text" id="name" name="user_name">
             <br><br>
@@ -48,9 +53,24 @@
            <input type="radio" id="twenty" name="amount" value="twenty">
            <label for="five">$20</label><br>
           </div><br>
-           <input type="submit" value="Next >">
-       </form>
+          <button>Next ></button>
+        </form>
+      </div>
+      <div class="thanks">
+        <h3>Thank you! You will be redirected to Paypal in just a few seconds.</h3>
       </div>
     </main>
+
+    <script>
+      $('form').submit(function(event){ event.preventDefault(); });
+
+
+      $( "button" ).click(function() {
+  $( "form" ).hide( "drop", { direction: "down" }, "slow" );
+  $( ".thanks" ).show( "fold", 1000 );
+});
+
+
+      </script>
     </body>
     </html>

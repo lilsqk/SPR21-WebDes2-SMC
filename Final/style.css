@@ -1,5 +1,6 @@
 @import "blog.css"; 
 @import "about.css"; 
+@import "donate.css"; 
 /* GENERAL */
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
