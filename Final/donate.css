@@ -1,3 +1,32 @@
 .thanks {
     display: none;
 }
+
+.donate-box {
+    display:flex;
+    flex-direction: row;
+}
+
+.donate-box p {
+   padding: 5px 5%;
+}
+
+.donate-form {
+ 
+    display: flex;
+    flex-direction: row;
+}
+form {
+    padding: 5%;
+    
+}
+
+#donate-head {
+    background-image: url('imgs/donate.jpeg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px;
+}
+
+.flex-container {}
