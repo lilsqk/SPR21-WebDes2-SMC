@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Img Src Selector</title>
+    <title>Donate</title>
 </head>
 
 <body>
@@ -24,21 +24,33 @@
             <li><a href="donate.html">donate</a></li>
         </ul>
     </div></div></header>
-    <form action="" method="post">
-        <ul>
-         <li>
+    <main>
+    <div class="donate-box">
+      <h2>Donate to Coaxial</h2>
+      <p>A one-time donation with PayPal. Coaxial Arts Foundation is a 501(c)3 charitable organization under the federal tax ID 47-3355354. All donations and contributions are tax deductible and benefit Coaxial’s artist community.</p>
+    </div>
+
+    <div class="donate-form">
+      <form action="../form-result.php" target="_blank">
            <label for="name">Name:</label>
            <input type="text" id="name" name="user_name">
-         </li>
-         <li>
+            <br><br>
+           
            <label for="mail">E-mail:</label>
            <input type="email" id="mail" name="user_email">
-         </li>
-         <li>
-           <label for="msg">Message:</label>
-           <textarea id="msg" name="user_message"></textarea>
-         </li>
-        </ul>
+          <br><br>
+            <div class="radio-btns">
+           <label for="msg">Amount:</label><br>
+           <input type="radio" id="five" name="amount" value="five">
+           <label for="five">$5</label><br>
+           <input type="radio" id="ten" name="amount" value="$ten">
+           <label for="five">$10</label><br>
+           <input type="radio" id="twenty" name="amount" value="twenty">
+           <label for="five">$20</label><br>
+          </div><br>
+           <input type="submit" value="Next >">
        </form>
+      </div>
+    </main>
     </body>
     </html>

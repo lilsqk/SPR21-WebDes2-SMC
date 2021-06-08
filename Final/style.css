@@ -12,6 +12,11 @@ h1 {
 }
 body {
   margin: 0px;
+  font-family:'Roboto', sans-serif;
+}
+
+main {
+  padding: 15px 42px;
 }
 
 .hero {
