@@ -8,6 +8,10 @@ h1 {
     color: white;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+}
 
 footer {
   background-color: black;
@@ -31,7 +35,7 @@ main {
 }
 
 p {
-  line-height: 1.45em;
+  line-height: 1.5em;
 }
 
 button {
@@ -48,18 +52,25 @@ button {
 
 
 .hero {
+<<<<<<< HEAD
    background-image: url(imgs/hero.jpeg);
    background-size: cover;
    background-repeat: none;
+=======
+    width: 100%;
+    display: flex;
+    align-self: center;
+    height:604px;
+    width: auto;
+>>>>>>> parent of 40e7845 (fixed responsive issues on home page)
 }
-
 
 
 
 .text-section {
   display: flex;
   flex-direction: column;
-    background-color: #7500fc;
+    background-color: transparent;
     width: 100%;
 }
 
@@ -73,23 +84,29 @@ button {
 #unlock{
   background-color: #7500fc;
   padding: 30px;
-
   color: white;
   margin-top: -6%;
 
 }
 
 #updates {
+<<<<<<< HEAD
   color: white;
   background-color: black; 
   margin-top: -1%; 
   padding: 50px;
 }
 
+=======
+  background-color: white;
+  padding: 5%;
+  color: black;
+>>>>>>> parent of 40e7845 (fixed responsive issues on home page)
 
+}
 
 #support-coaxial {
-  background-image: url(imgs/glitch.gif);
+  background-image: url(imgs/hero-2.jpeg);
   padding: 10%;
   margin-top: -3%;
 }
@@ -98,28 +115,25 @@ button {
   background-color:black;
   padding: 5px 25px;
 }
-
-@media (max-width: 767px) {
-  #updates {
-    margin-top: -5%;
-  }
-  .header-wrapper {
-    background: rgb(0, 0, 0);
-    padding: 0px 20px !important;
-  }
+@media (min-width: 768px) {
+  .top {
+    display: flex;
+    flex-direction: row;
+}
+.large-screen50 {
   
-.hero {
-  height: 550px;
+    width: 50vw;
+    flex-direction: row;
 }
 
-#updates {
-  display: none;
+.large-screen100 {
+  
+  justify-content: center;
 }
 
-#holguin {
-  padding-top: 80px;
 }
 
+<<<<<<< HEAD
   #member {
     margin-left: 9%;
   }
@@ -139,44 +153,53 @@ button {
   }
   
   }
+=======
+>>>>>>> parent of 40e7845 (fixed responsive issues on home page)
 
-@media (min-width: 768px) {
-  
-.large-screen50 {
-    width: 50%;
-    flex-direction: column;
-}
 
+<<<<<<< HEAD
 
 .large-screen60 {
   width: 60%;
   flex-direction: column;
 }
+=======
+>>>>>>> parent of 40e7845 (fixed responsive issues on home page)
 
-.large-screen40 {
-  width: 40%;
-  flex-direction: column;
+@media (max-width: 767px) {
+#updates {
+  margin-top: -5%;
+}
+.header-wrapper {
+  background: rgb(0, 0, 0);
+  padding: 0px 20px !important;
 }
 
+<<<<<<< HEAD
 .large-screen100 {
 width: 100%;
 flex-direction: column;
 justify-content: space-around;
+=======
+#member {
+  margin-left: 9%;
+>>>>>>> parent of 40e7845 (fixed responsive issues on home page)
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap:nowrap;
-  flex-direction:row;
+#support-coaxial {
+  margin-top: -12%;
+  background-image: url(imgs/donate.jpg);
+  background-position: bottom;
   
 }
 
+.small-screen100 {
+  width: 100vw;
+  overflow: hidden;
 }
 
 
-
-
-
+}
 /* NAVIGATION */
 .logo {
     width: 50px;
