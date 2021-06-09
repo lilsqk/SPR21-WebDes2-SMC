@@ -53,7 +53,42 @@
         <div class="small-screen100 large-screen100" id="support-coaxial">
            <button id="member" onclick="location.href='donate.html';"><h2>BECOME A MEMBER</h2></button> 
         </div></div>
-    </main>
 
+        <div id="dialog">
+            <form>
+                <div class="flex-container">
+                  <h2>WANT MORE ART IN YOUR LIFE?</h2>
+                  <p style="text-align:center;"><b>Subscribe to the Coaxial Newsletter</b></p>
+                </div>
+              
+                <div class="container" style="background-color:white">
+                  <input type="text" placeholder="email address" name="mail" required>
+                  <label>
+                    <p style="font-size: 13px;"> <input type="checkbox" checked="checked" name="subscribe">By checking this box you are agreeing to our terms and agreements.</p>
+                  </label>
+                </div>
+              
+                <button style="background-color:black">Submit</button>
+
+                </div>
+              </form>
+          </div>
+    </main>
+  
+
+    <script>
+              $('form').submit(function(event){ event.preventDefault(); });
+
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+
+        $( "button" ).click(function() {
+  $( "#dialog" ).hide( "drop", { direction: "down" }, "slow" );
+  $( ".ui-widget" ).hide( "drop", { direction: "down" }, "slow" );
+  
+});
+
+        </script>
 
     </body></html>
